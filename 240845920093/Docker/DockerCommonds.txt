@@ -1,0 +1,33 @@
+//check version
+docker --version
+
+//create docker file
+touch Dockerfile
+
+//edit docker file 
+nano Dockerfile
+
+//commonds inside dockerfile
+FROM ubuntu
+RUN apt-get update
+CDM ["echo","docker image created sucessfully"]
+
+
+//build docker image
+docker build
+
+
+//login
+docker login
+
+//see images
+docker images
+
+//ps
+docker ps
+docker ps -a
+
+//container
+docker start container_id
+docker pause container_id
+docker stop container_id
